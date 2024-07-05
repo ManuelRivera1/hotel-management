@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": 1,
+      "username": "prueba",
+      "password": "prueba",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "username": "dasda",
+      "password": "sdasdsa",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "datos",
+      "password": "datos",
+      "role": "user"
+    }
+  ],
+  "hotels": [
+    {
+      "id": "1",
+      "name": "Hotel A",
+      "location": "Ciudad X",
+      "description": "A luxurious beachfront hotel with stunning ocean views.",
+      "image": "https://via.placeholder.com/300",
+      "rooms": [
+        {
+          "id": 1,
+          "type": "Single",
+          "basePrice": 100,
+          "tax": 10,
+          "totalPrice": 110,
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "2",
+      "name": "Hotel B",
+      "location": "Ciudad Y",
+      "description": "A peaceful retreat in the mountains, perfect for hiking and relaxation.",
+      "image": "https://via.placeholder.com/300",
+      "rooms": [
+        {
+          "id": 1,
+          "type": "Single",
+          "basePrice": 120,
+          "tax": 12,
+          "totalPrice": 132,
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "1",
+      "name": "Hotel A",
+      "location": "Ciudad X",
+      "description": "A luxurious beachfront hotel with stunning ocean views.",
+      "image": "https://via.placeholder.com/300",
+      "rooms": [
+        {
+          "id": 1,
+          "type": "Single",
+          "basePrice": 100,
+          "tax": 10,
+          "totalPrice": 110,
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    },
+    {
+      "id": "2",
+      "name": "Hotel B",
+      "location": "Ciudad Y",
+      "description": "A peaceful retreat in the mountains, perfect for hiking and relaxation.",
+      "image": "https://via.placeholder.com/300",
+      "rooms": [
+        {
+          "id": 1,
+          "type": "Single",
+          "basePrice": 120,
+          "tax": 12,
+          "totalPrice": 132,
+          "enabled": true
+        }
+      ],
+      "enabled": true
+    }
+  ],
+  "reservations": []
+}

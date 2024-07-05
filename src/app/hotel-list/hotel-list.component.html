@@ -1,0 +1,102 @@
+<div class="banner">
+  <div class="banner-content">
+    <img src="https://st3.depositphotos.com/6672868/16219/v/450/depositphotos_162196832-stock-illustration-hotel-icon-illustration.jpg" alt="Hotel Logo">
+    <div class="login extra-links" *ngIf="!currentUser">
+      <a [routerLink]="['/login']">Iniciar sesión</a>
+      <a [routerLink]="['/register']">Registrarse</a>
+    </div>
+    <div class="user-info" *ngIf="currentUser">
+      <span>{{ currentUser.username }}</span>
+      <button (click)="logout()">Cerrar sesión</button>
+    </div>
+  </div>
+</div>
+
+<div class="search-bar">
+  <h1>¿A dónde vas?</h1>
+  <form>
+    <input type="text" placeholder="¿A dónde quieres ir?" />
+    <input type="date" placeholder="Fecha de entrada" />
+    <input type="date" placeholder="Fecha de salida" />
+    <input type="text" placeholder="2 personas, 1 habitación" />
+    <button type="submit">Buscar</button>
+  </form>
+</div>
+
+<div class="promotions">
+  <div class="promotion-item">
+    <h3>Encuentra un hospedaje especial</h3>
+    <div class="promotion-cards">
+      <div class="promotion-card" style="background-image: url('');">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/27/e6f49469-b67f-485b-8aaf-f14a79d0d164.jpeg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Todo incluido">
+        <p>Todo incluido</p>
+      </div>
+      <div class="promotion-card">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/12/02/3623a5ce-2e06-4f01-9072-4055c5d29326.jpeg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Resorts">
+        <p>Resorts</p>
+      </div>
+      <div class="promotion-card">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/PARTNER_Cowboy_Village_Resort.jpg?impolicy=resizecrop&rw=896&rh=590&cw=448" alt="Cabañas">
+        <p>Cabañas</p>
+      </div>
+      <div class="promotion-card">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/VRBO_APFT2_BARCELONA_THERIN_HOUSE_1_2974.jpg?impolicy=fcrop&h=590&w=448&q=mediumHigh" alt="Familias">
+        <p>Familias</p>
+      </div>
+      <div class="promotion-card">
+        <img src="https://forever.travel-assets.com/flex/flexmanager/images/2023/11/24/a6fd0a58-767c-4363-a3e4-ef774a03aa99.jpeg?impolicy=resizecrop&rw=896&rh=590&cw=448&cx=-100" alt="Vista al mar">
+        <p>Vista al mar</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="hotel-list-container">
+  <h2>Ofertas de última hora para el fin de semana</h2>
+  <div class="hotel-list">
+    <div class="hotel-card" *ngFor="let hotel of hotels">
+      <img [src]="hotel.image" alt="{{ hotel.name }}">
+      <div class="hotel-info">
+        <h3>{{ hotel.name }}</h3>
+        <p>{{ hotel.location }}</p>
+        <p>{{ hotel.description }}</p>
+      </div>
+      <div class="hotel-pricing">
+        <p>Precio: {{ hotel.rooms[0].totalPrice | currency }}</p>
+        <button>Ver detalles</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Destinos principales</h4>
+      <a href="#">Hoteles en Cartagena</a>
+      <a href="#">Hoteles en Bogotá</a>
+      <a href="#">Hoteles en Medellín</a>
+      <!-- Añade más enlaces según sea necesario -->
+    </div>
+    <div class="footer-section">
+      <h4>Ayuda y preguntas frecuentes</h4>
+      <a href="#">Mis reservaciones</a>
+      <a href="#">Preguntas frecuentes</a>
+      <a href="#">Contactar servicio al cliente</a>
+      <!-- Añade más enlaces según sea necesario -->
+    </div>
+    <div class="footer-section">
+      <h4>Proveedores y afiliados</h4>
+      <a href="#">Afíliate a nosotros</a>
+      <a href="#">Promociona con nosotros</a>
+      <!-- Añade más enlaces según sea necesario -->
+    </div>
+    <div class="footer-section">
+      <h4>Más información</h4>
+      <a href="#">Términos y condiciones</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Aviso legal</a>
+      <!-- Añade más enlaces según sea necesario -->
+    </div>
+  </div>
+</footer>

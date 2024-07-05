@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-left, .login-right {
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 350px;
+  text-align: center;
+}
+
+.login-left {
+}
+
+.login-left img {
+  max-width: 100px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.login-right {
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-size: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.form-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 18px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #ff5f6d, #ffc371);
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background: linear-gradient(135deg, #ffc371, #ff5f6d);
+}
+
+.extra-links {
+  margin-top: 20px;
+}
+
+.extra-links a {
+  display: block;
+  color: #aaa;
+  text-decoration: none;
+  margin: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+  color: #333;
+}
+
+.create-account {
+  color: #333;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+}
+.content{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.back-arrow img {
+  width: 24px;
+  height: 24px;
+}

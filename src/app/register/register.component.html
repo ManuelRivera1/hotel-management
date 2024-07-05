@@ -1,0 +1,32 @@
+<div class="register-container">
+  <a href="#" class="back-arrow">
+    <img src="assets/back-arrow.png" alt="Back">
+  </a>
+  <div class="content">
+    <div class="register-left">
+      <h2>MyHotel</h2>
+      <img src="https://st3.depositphotos.com/6672868/16219/v/450/depositphotos_162196832-stock-illustration-hotel-icon-illustration.jpg" alt="Hotel Logo">
+      <div class="extra-links">
+        <a [routerLink]="['/login']" class="create-account extra-links">User Login</a>
+      </div>
+    </div>
+  <div class="register-right">
+    <h2>Create Your Account</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="username">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" [(ngModel)]="username" name="username" placeholder="Username" required>
+        </label>
+      </div>
+      <div class="form-group">
+        <label for="password">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+        </label>
+      </div>
+      <button type="submit" class="register-button">Register</button>
+    </form>
+  </div>
+</div>
+</div>
